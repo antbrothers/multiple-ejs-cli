@@ -1,15 +1,42 @@
 # multiple-ejs-cli
 node+ejs+juqery 多页面脚手架
 
-### 遇到的坑
- Error: 'git clone' failed with status 128
- 我的地址为：https://github.com/antbrothers/multiple-ejs-cli.git
- 使用方式修改为：https://github.com:antbrothers/node-ejs-webpack#master
-#### 第三方库
-commander.js，可以自动的解析命令和参数，用于处理用户输入的命令。
-download-git-repo，下载并提取 git 仓库，用于下载项目模板。
-Inquirer.js，通用的命令行用户界面集合，用于和用户进行交互。
-handlebars.js，模板引擎，将用户提交的信息动态填充到文件中。
-ora，下载过程久的话，可以用于显示下载中的动画效果。
-chalk，可以给终端的字体加上颜色。
-log-symbols，可以在终端上显示出 √ 或 × 等的图标。
+## 开发前景
+```javascript
+  要求兼容到iE6,并且有SEO需求, 市面上一些MVVM 框架都不能用，只能用比较原始的 jquery, 
+  但是mvvm的开发模式实在有很爽，于是用node webpack ejs express 
+  配置了一个多页面应用程序，支持模块独立开发，模块预览，模块独立调试
+  技术栈: jquery webpack ejs node express 
+```
+## 部署介绍
+```javascript
+  生成静态页面部署: 1 npm run probuild
+                   2 把生成的dist 拷贝到服务器上即可
+  支持服务端渲染部署(把 css、html、js写入到内存): 
+                  1 把项目通过ftp上传到服务器
+                  2  npm install
+                  3 pm2 start ./build/server.js production
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devbuild": "webpack --config ./build/webpack.dev.config.js",
+    "probuild": "webpack --config ./build/webpack.pro.config.js",
+    "server": "node ./build/server.js development",
+    "pro": "node ./build/server.js production"
+  }
+```
+### 全局安装 
+npm install multiple-ejs-cli -g
+### 初始化项目
+m-ejs init XXX
+### 安装依赖
+npm install
+### 本地启动服务
+npm run server
+### 测试环境打包
+npm run devBuild
+### 生产环境打包
+npm run proBuild
+### 模拟服务端渲染部署
+npm run pro
+
+
