@@ -1,5 +1,5 @@
 # multiple-ejs-cli
-node+ejs+juqery 多页面脚手架
+node+ejs+jQuery 多页面脚手架
 
 ## 开发前景
 ```javascript
