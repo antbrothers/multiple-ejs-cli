@@ -27,7 +27,7 @@ program
           const spinner = ora('正在下载模板...')
           spinner.start()
           download(
-            'https://github.com/antbrothers/node-ejs-webpack.git',
+            'https://github.com:antbrothers/node-ejs-webpack#master',
             name,
             { clone: true },
             err => {

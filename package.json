@@ -1,6 +1,6 @@
 {
   "name": "multiple-ejs-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node + ejs + webpack + jquery 构建一个多页面应用程序模板",
   "main": "index.js",
   "scripts": {
