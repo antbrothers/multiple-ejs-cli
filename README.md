@@ -39,4 +39,10 @@ npm run proBuild
 ### 模拟服务端渲染部署
 npm run pro
 
+## 开启服务
+```javascript
+ 首页： http://localhost:3001/
+ 预览：http://localhost:8383/contentpage
+```
+
 
