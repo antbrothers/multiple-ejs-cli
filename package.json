@@ -1,0 +1,23 @@
+{
+  "name": "multiple-ejs-cli",
+  "version": "1.0.0",
+  "description": "node + ejs + webpack + jquery 构建一个多页面应用程序模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "m-ejs": "index.js"
+  },
+  "author": "jianxi_lin@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1",
+    "download-git-repo": "^1.1.0",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.2.0",
+    "log-symbols": "^2.2.0",
+    "ora": "^3.0.0"
+  }
+}
