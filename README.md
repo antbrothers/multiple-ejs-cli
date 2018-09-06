@@ -24,22 +24,22 @@ node+ejs+jQuery 多页面脚手架
     "pro": "node ./build/server.js production"
   }
 ```
-### 全局安装 
+##### 全局安装 
 npm install multiple-ejs-cli -g
-### 初始化项目
+##### 初始化项目
 m-ejs init XXX
-### 安装依赖
+##### 安装依赖
 npm install
-### 本地启动服务
+##### 本地启动服务
 npm run server
-### 测试环境打包
+##### 测试环境打包
 npm run devBuild
-### 生产环境打包
+##### 生产环境打包
 npm run proBuild
-### 模拟服务端渲染部署
+##### 模拟服务端渲染部署
 npm run pro
 
-## 开启服务
+#### 开启服务
 ```javascript
  首页： http://localhost:3001/
  预览：http://localhost:3001/contentpage
